@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froms</title>
+</head>
+<body>
+    <form action="">
+        <h1>Job Applications</h1>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" name="phone" id="phone"><br>
+        <label for="resume">Resume:</label><br>
+        <input type="file" name="resume" id="resume"><br>
+        <label for="ey">Experience (years):</label><br>
+        <input type="number" name="ey" id="ey" min="1" max="120"><br>
+        <fieldset>
+            <legend>Skills</legend>
+            <input type="checkbox" name="html" id="html"><br>
+            <label for="html">HTML</label><br>
+            <input type="checkbox" name="css" id="css"><br>
+            <label for="css">CSS</label><br>
+            <input type="checkbox" name="js" id="js"><br>
+            <label for="js">JavaScript</label><br>
+        </fieldset>
+        <label for="he">Highest Education</label><br>
+        <select name="he" id="he">
+            <option value="highschool">Highschool</option>
+            <option value="graduate">Graduate</option>
+            <option value="collage">Collage</option>
+        </select>
+        <p>Availablity:</p>
+        <input type="radio" name="av" id="ft"><br>
+        <label for="ft">Full-Time</label><br>
+        <input type="radio" name="av" id="pt"><br>
+        <label for="pt">Part-Time</label><br>
+        <label for="comment">Additional Comment</label><br>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
+        <input type="submit" name="submit" id="submit">
+
+        </form>
+</body>
+</html>

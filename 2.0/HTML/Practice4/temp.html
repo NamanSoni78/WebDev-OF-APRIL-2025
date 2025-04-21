@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quiry</title>
+    <style>
+        *{
+            border: 1px solid black;
+        }
+        .container{
+            display: flex;
+
+        }
+        p{
+            width: 800px;
+        }
+        img{
+            height: 250px;
+        }
+        @media (max-width:640px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptas incidunt ipsa culpa ad repellat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam expedita deleniti ipsa asperiores voluptatibus laboriosam.    </p>
+        </div>
+        <img src="WhatsApp Image 2025-04-06 at 6.43.26 AM (1).jpeg">
+    </div>
+</body>
+</html>

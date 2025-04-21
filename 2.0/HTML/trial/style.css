@@ -1,0 +1,146 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1200px;
+}
+
+.main {
+    width: 360px;
+    height: 720px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+
+}
+
+#username {
+    margin: 5px;
+}
+
+#arrow {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: 7px;
+}
+#upperPart{
+    display: flex;
+    height: 36px;
+    background-color: #fff;
+}
+#upperPartRight{
+    display: flex;
+    width: 180px;
+    height: 36px;
+    /* border: 1px solid black; */
+    justify-content: right;
+
+}
+#at{
+    border: 1px solid black;
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    text-align: center;
+    /* margin-top: 8px; */
+    font-weight: bolder;
+    /* margin: auto 10px; */
+}
+#plus{
+    border: 1px solid black;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    /* margin-top: 8px; */
+    font-weight: bolder;
+    /* margin: auto 10px; */
+}
+#setting{
+    /* border: 1px solid black; */
+    height: 20px;
+    width: 20px;
+    /* padding-top: 2px; */
+    /* border-radius: 3px; */
+    text-align: center;
+    /* margin-top: 8px; */
+    font-weight: bolder;
+    /* margin: auto 10px; */
+}
+.upperButton{
+    margin: auto 8px;
+    margin-top: 8px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+
+
+#lPart {
+    height: 36px;
+    /* border: 1px solid black; */
+    width: 358px;
+    display: flex;
+    margin-top: auto;
+    justify-content: space-around;
+    align-self: flex-end;
+    /* margin-bottom: 5px; */
+    background-color: #fff;
+}
+
+.icons {
+    /* border: 1px solid black; */
+    border-radius: 500px;
+    align-self: center;
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.lowerButton {
+    /* border: hidden; */
+    margin: auto 8px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#upPart{
+    display: flex;
+    margin-top: 20px;
+}
+#pPic{
+    border-radius: 100%;
+    margin: 5px;
+    border: 4px solid white;
+    height: 80px;
+}
+#pName{
+    display: inline;
+}
+#bTick{
+    margin-left:5px ;
+    width: 14px;
+    height: 14px;
+}
+#pInfo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+#pStats{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 250px;
+}

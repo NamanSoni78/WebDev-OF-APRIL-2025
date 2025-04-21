@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LND Stopwatch</title>
+    <link rel="stylesheet" href="stopwatch-style.css" />
+  </head>
+  <body>
+    <div class="stopwatch">
+      <h1 id="displayTime">00:00:00</h1>
+      <div class="buttons">
+        <img src="stopwatchresrc/stop.png" id="stop" onclick="watchStop()" /><img
+          src="stopwatchresrc/start.png"id="start" onclick="watchStart()"/>
+          <img src="stopwatchresrc/reset.png" id="reset" onclick="watchReset()" />
+      </div>
+    </div>
+    <script>
+      let [seconds, miniuts, hours] = [0, 0, 0];
+      let displayTime = document.getElementById("displayTime");
+      let timer = null;
+      function stopwatch() {
+        seconds++;
+        if (seconds == 60) {
+          seconds = 0;
+          miniuts++;
+          if (miniuts == 60) {
+            miniuts = 0;
+            hours++;
+          }
+        }
+        let h =hours < 10 ? "0"+hours : hours;
+        let m =miniuts < 10 ? "0"+miniuts : miniuts;
+        let s =seconds < 10 ? "0"+seconds : seconds;
+        displayTime.innerHTML = h +":"+ m +":"+ s;
+      }
+      function watchStart() {
+        if (timer !== null) {
+          clearInterval(timer);
+        }
+        timer = setInterval(stopwatch, 1000);
+      }
+      function watchStop(){
+        clearInterval(timer);
+      }
+      function watchReset(){
+        clearInterval(timer);
+        [seconds, miniuts, hours] = [0, 0, 0];
+        displayTime.innerHTML = "00:00:00";
+      }
+    </script>
+  </body>
+</html>

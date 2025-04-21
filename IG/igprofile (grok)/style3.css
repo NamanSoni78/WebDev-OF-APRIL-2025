@@ -1,0 +1,356 @@
+@keyframes rainbow {
+    0% { color: violet; }
+    15% { color: indigo; }
+    30% { color: blue; }
+    45% { color: green; }
+    60% { color: yellow; }
+    75% { color: orange; }
+    100% { color: red; }
+}
+@keyframes blink {
+    50% { color: black; }
+    100% { color: white; }
+}
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.child {
+    display: inline-flex;
+    border: 2px solid black;
+    height: 250px;
+    width: 784px;
+    background-color: #3d3d3d;
+    align-items: center;
+    justify-content: center;
+}
+.child2 {
+    display: inline-flex;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 95%;
+    height: 92%;
+}
+.left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#propic {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 360px;
+    z-index: 1;
+}
+#propic:hover {
+    visibility: hidden;
+    position: absolute;
+    border-radius: 360px;
+    transition: ease-in-out 0.4s;
+    z-index: 0.5;
+}
+#lndani {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 360px;
+}
+#lndani:hover {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 30px;
+    transition: ease-in-out 0.4s;
+    z-index: 10;
+}
+#name {
+    display: inline-flex;
+    margin-top: 10px;
+    font-size: x-large;
+}
+#name:hover {
+    animation: rainbow 2s ease-in-out 0s infinite alternate;
+}
+#verified2 {
+    margin-top: 22px;
+    margin-left: 5px;
+    height: 23px;
+    width: 35px;
+    position: relative;
+    top: 2px;
+    border-radius: 720px;
+    position: absolute;
+}
+#verified {
+    margin-top: 8px;
+    height: 30px;
+    width: 40px;
+    position: relative;
+    top: 2px;
+    border-radius: 720px;
+    z-index: 2;
+}
+#verified:hover {
+    visibility: hidden;
+}
+#follow {
+    width: 50px;
+    height: 30px;
+    margin-left: 25px;
+    background-color: #e8e8e873;
+    border: none;
+    cursor: pointer;
+}
+#follow:hover {
+    font-size: medium;
+    transition: ease-in-out 0.2s;
+}
+#msg {
+    width: 65px;
+    height: 30px;
+    margin-left: 8px;
+    background-color: #e8e8e873;
+    border: none;
+    cursor: pointer;
+}
+#msg:hover {
+    font-size: medium;
+    transition: ease-in-out 0.2s;
+}
+#pff {
+    display: inline-flex;
+    font-weight: 800;
+}
+#Posts {
+    margin-right: 10px;
+}
+#Followers {
+    margin-right: 10px;
+}
+#name2 {
+    margin-top: 10px;
+    font-size: medium;
+}
+#name2:hover {
+    animation: rainbow 2s ease 0s infinite alternate;
+    transition: ease-in-out 0.4s;
+}
+#at {
+    margin: 5px auto;
+    width: 40px;
+    border: 0;
+    border-radius: 10px;
+}
+#at:hover {
+    width: 55px;
+    font-size: medium;
+    transition: ease-in-out 0.2s;
+}
+#Profession {
+    font-weight: 500;
+    color: #9e9e9e;
+}
+#Profession:hover {
+    animation: blink 0.5s ease 0s infinite alternate;
+    transition: ease-in-out 0.4s;
+}
+#Description:hover {
+    font-size: large;
+    font-style: oblique;
+    transition: ease-in-out 0.1s;
+}
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    animation: fadeOut 2s ease-in-out forwards;
+}
+@media screen and (max-width: 580px) {
+    .child {
+        width: 90vw;
+        height: auto;
+    }
+    .left {
+        width: 33%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #propic {
+        margin-right: 20px;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 360px;
+        z-index: 1;
+    }
+    #propic:hover {
+        visibility: hidden;
+        position: absolute;
+        border-radius: 360px;
+        transition: ease-in-out 0.4s;
+    }
+    #lndani {
+        margin-right: 20px;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 360px;
+    }
+    #lndani:hover {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border-radius: 30px;
+        transition: ease-in-out 0.4s;
+        z-index: 10;
+    }
+    #name {
+        display: inline-flex;
+        margin-top: 10px;
+        font-size: large;
+    }
+    #verified2 {
+        margin-top: 22px;
+        margin-left: 3.7px;
+        height: 17.037px;
+        width: 25.92px;
+        position: relative;
+        top: 1px;
+        border-radius: 720px;
+        position: absolute;
+    }
+    #verified {
+        margin-top: 8px;
+        height: 22.22px;
+        width: 29.62px;
+        position: relative;
+        border-radius: 720px;
+        z-index: 2;
+    }
+    #follow {
+        font-size: 12px;
+        width: 37.03px;
+        height: 22.22px;
+        margin-left: 18.50px;
+        background-color: #e8e8e873;
+        border: none;
+        cursor: pointer;
+    }
+    #follow:hover {
+        font-size: 15px;
+        transition: ease-in-out 0.2s;
+    }
+    #msg {
+        font-size: 12px;
+        width: 48.14px;
+        height: 22.22px;
+        margin-left: 5.92px;
+        background-color: #e8e8e873;
+        border: none;
+        cursor: pointer;
+    }
+    #msg:hover {
+        font-size: 15px;
+        transition: ease-in-out 0.2s;
+    }
+    #pff {
+        display: inline-flex;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    #Posts {
+        margin-right: 5px;
+    }
+    #Followers {
+        margin-right: 5px;
+    }
+    #name2 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    #at {
+        margin: 5px auto;
+        width: 50px;
+        font-size: 14px;
+    }
+    #at:hover {
+        width: 70px;
+        font-size: 18px;
+        transition: ease-in-out 0.2s;
+    }
+    #Description {
+        font-size: 12px;
+    }
+    #Description:hover {
+        font-size: 16px;
+        font-style: oblique;
+        transition: ease-in-out 0.1s;
+    }
+}
+#faq {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 784px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+}
+#faq h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+#faq p {
+    margin-bottom: 5px;
+}
+.right p a {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #e8e8e873;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
+.right p a:hover {
+    font-size: 14px;
+    transition: ease-in-out 0.2s;
+}
+@media screen and (max-width: 580px) {
+    #faq {
+        width: 90vw;
+        padding: 10px;
+        font-size: 12px;
+    }
+    #faq h3 {
+        font-size: 14px;
+    }
+}

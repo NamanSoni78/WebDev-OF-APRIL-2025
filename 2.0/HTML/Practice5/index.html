@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        @keyframes anime {
+            from{
+                margin-left: 10px;
+            }
+            to{
+                margin-left: 800px;
+            }
+        }
+        .circle{
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            background: #6415db;
+            animation: anime 2s linear 0.5s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
